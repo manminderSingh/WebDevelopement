@@ -1,0 +1,15 @@
+.hidden {
+    display: none;
+}
+
+
+
+/* <script type="text/javascript">
+$('#selectform').on('change', function() {
+    var val = $(this).val();
+    $('#user').hide();
+    $('#hiring').hide();
+    $('#' + val).show();
+});
+
+</script> */
