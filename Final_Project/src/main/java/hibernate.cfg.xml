@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/finalproject</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.default_schema">finalproject</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+        
+        <mapping class="com.myneu.project.pojo.AddressCustomer"/>
+        <mapping class="com.myneu.project.pojo.AddressSupplier"/>
+        <mapping class="com.myneu.project.pojo.Customer"/>
+        <mapping class="com.myneu.project.pojo.Supplier"/>
+        <mapping class="com.myneu.project.pojo.Users"/>
+        <mapping class="com.myneu.project.pojo.Product"/>
+        <mapping class="com.myneu.project.pojo.ProductAddToCart"/> 
+        <mapping class="com.myneu.project.pojo.Order"/>
+         <mapping class="com.myneu.project.pojo.OrderTemp"/>
+    	 <mapping class="com.myneu.project.pojo.Payment"/>
+    	  <mapping class="com.myneu.project.pojo.Contactus"/>
+    	  	  <mapping class="com.myneu.project.pojo.EmailPojo"/>
+    <!--     <mapping class="com.myneu.project.pojo.Payment_order_customer"/> -->
+       <mapping class="com.myneu.project.pojo.FinalProductsOrder"/>
+        
+    </session-factory>
+</hibernate-configuration>
